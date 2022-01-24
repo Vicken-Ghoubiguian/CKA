@@ -1,5 +1,5 @@
 //
-class Coordinates {
+final class Coordinates {
 
     //
     private var longitude: Double = 0.0
@@ -25,5 +25,12 @@ class Coordinates {
 
         //
         return this.latitude
+    }
+
+    //
+    public override fun toString(): String {
+
+        //
+        return ""
     }
 }
