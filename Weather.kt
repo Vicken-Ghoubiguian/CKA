@@ -16,4 +16,39 @@ final class Weather {
         this.description = description
         this.iconUrl = iconUrl
     }
+
+    //
+    public fun getId(): Int? {
+
+        //
+        return this.id
+    }
+
+    //
+    public fun getMain(): String? {
+
+        //
+        return this.main
+    }
+
+    //
+    public fun getDescription(): String? {
+
+        //
+        return this.description
+    }
+
+    //
+    public fun getIconUrl(): String? {
+
+        //
+        return this.iconUrl
+    }
+
+    //
+    public override fun toString(): String {
+
+        //
+        return ""
+    }
 }
