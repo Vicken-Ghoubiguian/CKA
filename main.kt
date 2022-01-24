@@ -3,5 +3,5 @@ fun main(args : Array<String>) {
 
     var openWeatherMap = OpenWeather("", "", "")
 
-    println("Hello, World!")
+    println(openWeatherMap.toString())
 }
