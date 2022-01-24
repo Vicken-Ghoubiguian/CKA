@@ -15,5 +15,23 @@ class Time {
     }
 
     //
-    //public fun getSunriseAsTimestampAccordingToUtc
+    public fun getSunriseAsTimestampAccordingToUtc(): Long? {
+
+        //
+        return this.sunriseAsTimestampAccordingToUtc
+    }
+
+    //
+    public fun getSunsetAsTimestampAccordingToUtc(): Long? {
+
+        //
+        return this.sunsetAsTimestampAccordingToUtc
+    }
+
+    //
+    public override fun toString(): String {
+
+        //
+        return ""
+    }
 }
