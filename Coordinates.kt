@@ -13,5 +13,17 @@ class Coordinates {
         this.latitude = latitude
     }
 
+    //
+    public fun getLongitude(): Double {
 
+        //
+        return this.longitude
+    }
+
+    //
+    public fun getLatitude(): Double {
+
+        //
+        return this.latitude
+    }
 }
