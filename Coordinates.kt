@@ -2,8 +2,8 @@
 final class Coordinates {
 
     //
-    private var longitude: Double = 0.0
-    private var latitude: Double = 0.0
+    private var longitude: Double? = null
+    private var latitude: Double? = null
 
     //
     public fun Coordinates(longitude: Double, latitude: Double) {
@@ -14,14 +14,14 @@ final class Coordinates {
     }
 
     //
-    public fun getLongitude(): Double {
+    public fun getLongitude(): Double? {
 
         //
         return this.longitude
     }
 
     //
-    public fun getLatitude(): Double {
+    public fun getLatitude(): Double? {
 
         //
         return this.latitude
