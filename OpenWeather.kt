@@ -4,6 +4,7 @@ final class OpenWeather {
     //
     private var coords: Coordinates? = null
     private var weather: Weather? = null
+    private var time: Time? = null
 
     //
     public fun OpenWeather(localization: String, countryCode: String, apiKey: String) {
@@ -25,6 +26,12 @@ final class OpenWeather {
     public fun getWeather(): Weather? {
 
         return this.weather
+    }
+
+    //
+    public fun getTime(): Time? {
+
+        return this.time
     }
 
     //
