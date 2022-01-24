@@ -1,5 +1,5 @@
 //
-final class OpenWeather {
+final class OpenWeather(s: String, s1: String, s2: String) {
 
     //
     private var coords: Coordinates? = null
