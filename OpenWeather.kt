@@ -1,5 +1,5 @@
 //
-class OpenWeather {
+final class OpenWeather {
 
     //
     public fun OpenWeather(localization: String, countryCode: String, apiKey: String) {
@@ -9,5 +9,11 @@ class OpenWeather {
     //
     public fun OpenWeather(localization: String, apiKey: String) {
 
+    }
+
+    //
+    public override fun toString(): String {
+
+        return ""
     }
 }
