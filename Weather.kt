@@ -10,6 +10,10 @@ final class Weather {
     //
     public fun Weather(id: Int, main: String, description: String, iconUrl: String) {
 
-
+        //
+        this.id = id
+        this.main = main
+        this.description = description
+        this.iconUrl = iconUrl
     }
 }
