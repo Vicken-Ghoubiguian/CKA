@@ -1,4 +1,5 @@
 package openWeather
 
-class Temperature {
+//
+final class Temperature {
 }
