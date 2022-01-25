@@ -1,2 +1,4 @@
+package OpenWeather
+
 class Coordinates {
 }

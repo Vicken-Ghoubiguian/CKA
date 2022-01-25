@@ -1,3 +1,5 @@
+package OpenWeather
+
 //
 class OpenWeather(localization: String, countryCode: String, apiKey: String) {
 
