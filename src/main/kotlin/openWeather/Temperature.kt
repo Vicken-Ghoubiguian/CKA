@@ -14,4 +14,10 @@ final class Temperature {
         this.value = value
         this.measureUnit = TemperatureUnitEnum.KELVIN
     }
+
+    //
+    public fun getValue(): Double? {
+
+        return this.value
+    }
 }
