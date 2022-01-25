@@ -1,0 +1,4 @@
+package openWeather
+
+class Temperature {
+}
