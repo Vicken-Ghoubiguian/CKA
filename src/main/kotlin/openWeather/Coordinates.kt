@@ -30,6 +30,6 @@ final class Coordinates {
     //
     public override fun toString(): String {
 
-        return "Hello World!"
+        return "(" + this.longitude + "," + this.latitude + ")"
     }
 }
