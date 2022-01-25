@@ -1,11 +1,11 @@
 package OpenWeather
 
 //
-class Coordinates {
+final class Coordinates {
 
     //
-    var longitude: Double? = null
-    var latitude: Double? = null
+    private var longitude: Double? = null
+    private var latitude: Double? = null
 
     //
     public fun Coordinates(longitude: Double, latitude: Double) {
@@ -13,5 +13,23 @@ class Coordinates {
         //
         this.longitude = longitude
         this.latitude = latitude
+    }
+
+    //
+    public fun getLongitude(): Double? {
+
+        return this.longitude
+    }
+
+    //
+    public fun getLatitude(): Double? {
+
+        return this.latitude
+    }
+
+    //
+    public override fun toString(): String {
+
+        return "Hello World!"
     }
 }
