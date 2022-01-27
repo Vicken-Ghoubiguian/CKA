@@ -17,6 +17,11 @@ class OpenWeather(localization: String, countryCode: String, apiKey: String) {
     }
 
     //
+    public fun OpenWeather(longitude: Double, latitude: Double, apiKey: String) {
+
+    }
+
+    //
     public fun getCoords(): Coordinates? {
 
         return this.coords
