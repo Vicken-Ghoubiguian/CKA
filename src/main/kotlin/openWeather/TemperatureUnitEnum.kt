@@ -1,4 +1,4 @@
-package presentopenWeather
+package openWeather
 
 //
 enum class TemperatureUnitEnum {

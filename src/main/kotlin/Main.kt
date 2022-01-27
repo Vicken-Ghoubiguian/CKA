@@ -1,4 +1,4 @@
-import presentopenWeather.PresentOpenWeather
+import openWeather.PresentOpenWeather
 
 //
 fun main(args: Array<String>) {

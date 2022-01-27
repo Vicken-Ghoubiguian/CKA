@@ -1,4 +1,4 @@
-package presentopenWeather
+package openWeather
 
 //
 class PresentOpenWeather(localization: String, countryCode: String, apiKey: String) {

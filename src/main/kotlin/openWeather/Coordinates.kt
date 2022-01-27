@@ -1,4 +1,4 @@
-package presentopenWeather
+package openWeather
 
 //
 final class Coordinates {
