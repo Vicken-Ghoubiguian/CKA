@@ -1,4 +1,4 @@
-package openWeather
+package presentopenWeather
 
 //
 final class Temperature {

@@ -1,10 +1,10 @@
-import openWeather.OpenWeather
+import presentopenWeather.PresentOpenWeather
 
 //
 fun main(args: Array<String>) {
 
     //
-    var currentOpenWeather = OpenWeather("", "", "")
+    var currentOpenWeather = PresentOpenWeather("", "", "")
 
     //
     println(currentOpenWeather.toString())
