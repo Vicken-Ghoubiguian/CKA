@@ -6,6 +6,7 @@ class PresentOpenWeather(localization: String, countryCode: String, apiKey: Stri
     //
     private var coords: Coordinates? = null
     private var humidity: Humidity? = null
+    private var wind: Wind? = null
 
     //
     public fun PresentOpenWeather(localization: String, apiKey: String) {
@@ -32,6 +33,12 @@ class PresentOpenWeather(localization: String, countryCode: String, apiKey: Stri
     public fun getHumidity(): Humidity? {
 
         return this.humidity
+    }
+
+    //
+    public fun getWind(): Wind? {
+
+        return this.wind
     }
 
     //
