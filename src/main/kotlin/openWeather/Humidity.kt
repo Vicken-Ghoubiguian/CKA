@@ -28,6 +28,6 @@ class Humidity {
     //
     public override fun toString(): String {
 
-        return ""
+        return this.value.toString() + " " + this.unitScale
     }
 }
