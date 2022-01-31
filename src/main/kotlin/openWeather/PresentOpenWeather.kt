@@ -15,17 +15,41 @@ class PresentOpenWeather(localization: String, countryCode: String, apiKey: Stri
     private var wind: Wind? = null
 
     //
-    public fun PresentOpenWeather(localization: String, apiKey: String) {
+    public suspend fun PresentOpenWeather(localization: String, apiKey: String) {
+
+        //
+        val openWeatherClient = HttpClient(CIO)
 
         //
         val httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "&appid=" + apiKey
+
+        //
+        val openWeatheResponse: HttpResponse = openWeatherClient.get(httpOpenWeatherRequest)
+
+        //
+        println(openWeatheResponse.status)
+
+        //
+        openWeatherClient.close()
     }
 
     //
-    public fun PresentOpenWeather(localization: String, countryCode: String, apiKey: String) {
+    public suspend fun PresentOpenWeather(localization: String, countryCode: String, apiKey: String) {
+
+        //
+        val openWeatherClient = HttpClient(CIO)
 
         //
         val httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "," + countryCode + "&appid=" + apiKey
+
+        //
+        val openWeatheResponse: HttpResponse = openWeatherClient.get(httpOpenWeatherRequest)
+
+        //
+        println(openWeatheResponse.status)
+
+        //
+        openWeatherClient.close()
     }
 
     //
