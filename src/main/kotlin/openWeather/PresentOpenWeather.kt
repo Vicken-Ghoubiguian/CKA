@@ -17,32 +17,21 @@ class PresentOpenWeather{
     private var der: String? = null
 
     //
-    /*public suspend fun PresentOpenWeather(localization: String, apiKey: String) {
-
-        this.der = "Hello World!"
-
-        //
-        val openWeatherClient = HttpClient(CIO)
-
-        //
-        val httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "&appid=" + apiKey
-
-        //
-        val openWeatheResponse: HttpResponse = openWeatherClient.get(httpOpenWeatherRequest)
-
-        //
-        println(openWeatheResponse.status)
-
-        //
-        openWeatherClient.close()
-    }*/
+    /**/
 
     //
     constructor(localization: String, countryCode: String, apiKey: String) {
 
-        //this.der = "Hello World!"
+    }
 
-        //this.openWeatherInitializer(localization, countryCode, apiKey)
+    //
+    constructor(localization: String, apiKey: String) {
+
+    }
+
+    //
+    constructor(longitude: Double, latitude: Double, apiKey: String) {
+
     }
 
     //
@@ -67,9 +56,25 @@ class PresentOpenWeather{
     }
 
     //
-    /*public suspend fun PresentOpenWeather(longitude: Double, latitude: Double, apiKey: String) {
+    public suspend fun openWeatherInitializer(localization: String, apiKey: String) {
 
-    }*/
+        this.der = "Hello World!"
+
+        //
+        val openWeatherClient = HttpClient(CIO)
+
+        //
+        val httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "&appid=" + apiKey
+
+        //
+        val openWeatheResponse: HttpResponse = openWeatherClient.get(httpOpenWeatherRequest)
+
+        //
+        println(openWeatheResponse.status)
+
+        //
+        openWeatherClient.close()
+    }
 
     //
     public fun getCoords(): Coordinates? {
