@@ -4,10 +4,10 @@ package openWeather
 interface Parameters {
 
     //
-    val parametersType: String
+    var parametersType: String
 
     //
-    public fun getParametersType()
+    //public fun getParametersType(): String
 
     //
     public override fun toString(): String
