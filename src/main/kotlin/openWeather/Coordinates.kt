@@ -8,7 +8,7 @@ final class Coordinates {
     private var latitude: Double? = null
 
     //
-    public fun Coordinates(longitude: Double, latitude: Double) {
+    constructor(longitude: Double, latitude: Double) {
 
         //
         this.longitude = longitude

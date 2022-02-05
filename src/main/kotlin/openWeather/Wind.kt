@@ -9,7 +9,7 @@ class Wind {
     private var gust: Double? = null
 
     //
-    public fun Wind(speed: Double, deg: Double, gust: Double) {
+    constructor(speed: Double, deg: Double, gust: Double) {
 
         this.speed = speed
         this.deg = deg

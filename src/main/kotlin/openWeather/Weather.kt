@@ -10,7 +10,7 @@ class Weather {
     private var iconUrl: String? = null
 
     //
-    public fun Weather(id: Int, main: String, description: String, iconUrl: String) {
+    constructor(id: Int, main: String, description: String, iconUrl: String) {
 
         this.id = id
         this.main = main

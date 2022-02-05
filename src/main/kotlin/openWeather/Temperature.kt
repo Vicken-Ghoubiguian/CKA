@@ -8,7 +8,7 @@ final class Temperature {
     private var measureUnit: TemperatureUnitEnum? = null
 
     //
-    public fun Temperature(value: Double) {
+    constructor(value: Double) {
 
         //
         this.value = value

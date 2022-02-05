@@ -9,7 +9,7 @@ class GeographicLocation {
     private var cityName: String? = null
 
     //
-    public fun GeographicLocation(countryCode: String, cityName: String) {
+    constructor(countryCode: String, cityName: String) {
 
         //
         this.countryCode = countryCode

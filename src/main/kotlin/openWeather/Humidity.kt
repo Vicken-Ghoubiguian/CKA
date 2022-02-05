@@ -8,7 +8,7 @@ class Humidity {
     private val unitScale: String = "%"
 
     //
-    public fun Humidity(value: Int) {
+    constructor(value: Int) {
 
         this.value = value
     }
