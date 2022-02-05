@@ -14,8 +14,6 @@ class PresentOpenWeather{
     private var humidity: Humidity? = null
     private var wind: Wind? = null
 
-    private var der: String? = null
-
     //
     /**/
 
@@ -37,8 +35,6 @@ class PresentOpenWeather{
     //
     public suspend fun openWeatherInitializer(localization: String, countryCode: String, apiKey: String) {
 
-        this.der = "Hello World!"
-
         //
         val openWeatherClient = HttpClient(CIO)
 
@@ -57,8 +53,6 @@ class PresentOpenWeather{
 
     //
     public suspend fun openWeatherInitializer(localization: String, apiKey: String) {
-
-        this.der = "Hello World!"
 
         //
         val openWeatherClient = HttpClient(CIO)
@@ -97,6 +91,6 @@ class PresentOpenWeather{
     //
     public override fun toString(): String {
 
-        return "(" + this.der
+        return "Hello World!"
     }
 }
