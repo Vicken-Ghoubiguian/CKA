@@ -1,11 +1,11 @@
 import openWeather.PresentOpenWeather
-import openWeather.ForecastOpenWeather
 
 //
-fun main(args: Array<String>) {
+suspend fun main(args: Array<String>) {
 
     //
     var currentPresentOpenWeather = PresentOpenWeather("", "", "")
+    currentPresentOpenWeather.openWeatherInitializer("", "", "")
 
     //
     println(currentPresentOpenWeather.toString())

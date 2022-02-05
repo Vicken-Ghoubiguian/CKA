@@ -7,15 +7,19 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 
 //
-class PresentOpenWeather(localization: String, countryCode: String, apiKey: String) {
+class PresentOpenWeather{
 
     //
     private var coords: Coordinates? = null
     private var humidity: Humidity? = null
     private var wind: Wind? = null
 
+    private var der: String? = null
+
     //
-    public suspend fun PresentOpenWeather(localization: String, apiKey: String) {
+    /*public suspend fun PresentOpenWeather(localization: String, apiKey: String) {
+
+        this.der = "Hello World!"
 
         //
         val openWeatherClient = HttpClient(CIO)
@@ -31,10 +35,20 @@ class PresentOpenWeather(localization: String, countryCode: String, apiKey: Stri
 
         //
         openWeatherClient.close()
+    }*/
+
+    //
+    constructor(localization: String, countryCode: String, apiKey: String) {
+
+        //this.der = "Hello World!"
+
+        //this.openWeatherInitializer(localization, countryCode, apiKey)
     }
 
     //
-    public suspend fun PresentOpenWeather(localization: String, countryCode: String, apiKey: String) {
+    public suspend fun openWeatherInitializer(localization: String, countryCode: String, apiKey: String) {
+
+        this.der = "Hello World!"
 
         //
         val openWeatherClient = HttpClient(CIO)
@@ -53,9 +67,9 @@ class PresentOpenWeather(localization: String, countryCode: String, apiKey: Stri
     }
 
     //
-    public fun PresentOpenWeather(longitude: Double, latitude: Double, apiKey: String) {
+    /*public suspend fun PresentOpenWeather(longitude: Double, latitude: Double, apiKey: String) {
 
-    }
+    }*/
 
     //
     public fun getCoords(): Coordinates? {
@@ -78,6 +92,6 @@ class PresentOpenWeather(localization: String, countryCode: String, apiKey: Stri
     //
     public override fun toString(): String {
 
-        return "Hello World!"
+        return "(" + this.der
     }
 }
