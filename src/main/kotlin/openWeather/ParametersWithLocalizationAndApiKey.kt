@@ -16,6 +16,20 @@ class ParametersWithLocalizationAndApiKey : Parameters {
     }
 
     //
+    public fun getLocalization(): String? {
+
+        //
+        return this.localization
+    }
+
+    //
+    public fun getApiKey(): String? {
+
+        //
+        return this.apiKey
+    }
+
+    //
     override var parametersType: ParametersEnum = ParametersEnum.PARAMETERSWITHLOCALIZATIONAPIKEY
 
     //
