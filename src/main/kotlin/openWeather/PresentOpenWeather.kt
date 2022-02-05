@@ -10,6 +10,9 @@ import io.ktor.client.statement.*
 class PresentOpenWeather{
 
     //
+    private var parameters: Parameters? = null
+
+    //
     private var coords: Coordinates? = null
     private var humidity: Humidity? = null
     private var wind: Wind? = null
