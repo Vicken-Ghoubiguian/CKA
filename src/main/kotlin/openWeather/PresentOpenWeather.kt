@@ -52,7 +52,7 @@ class PresentOpenWeather{
     }
 
     //
-    public suspend fun openWeatherInitializer(localization: String, apiKey: String) {
+    /*public suspend fun openWeatherInitializer(localization: String, apiKey: String) {
 
         //
         val openWeatherClient = HttpClient(CIO)
@@ -68,7 +68,7 @@ class PresentOpenWeather{
 
         //
         openWeatherClient.close()
-    }
+    }*/
 
     //
     public fun getCoords(): Coordinates? {
