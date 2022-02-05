@@ -53,7 +53,7 @@ class PresentOpenWeather{
 
             //
             httpOpenWeatherRequest =
-                "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "," + this.parameters?.getCountryCode() + "&appid=" + this.parameters?.getAPIKey()
+                "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "&appid=" + this.parameters?.getAPIKey()
 
         } else {
 
