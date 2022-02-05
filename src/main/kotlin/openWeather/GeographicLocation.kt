@@ -1,10 +1,20 @@
 package openWeather
 
+import java.util.*
+
 class GeographicLocation {
 
     //
     private var countryCode: String? = null
     private var cityName: String? = null
+
+    //
+    public fun GeographicLocation(countryCode: String, cityName: String) {
+
+        //
+        this.countryCode = countryCode
+        this.cityName = cityName
+    }
 
     //
     public fun getCountryCode(): String? {
