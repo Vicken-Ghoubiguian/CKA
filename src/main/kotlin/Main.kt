@@ -5,7 +5,7 @@ suspend fun main(args: Array<String>) {
 
     //
     var currentPresentOpenWeather = PresentOpenWeather("", "", "")
-    currentPresentOpenWeather.openWeatherInitializer("", "", "")
+    currentPresentOpenWeather.openWeatherInitializer()
 
     //
     println(currentPresentOpenWeather.toString())

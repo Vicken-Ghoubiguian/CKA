@@ -40,7 +40,7 @@ class PresentOpenWeather{
     }
 
     //
-    public suspend fun openWeatherInitializer(localization: String, countryCode: String, apiKey: String) {
+    public suspend fun openWeatherInitializer() {
 
         //
         val openWeatherClient = HttpClient(CIO)
@@ -53,13 +53,13 @@ class PresentOpenWeather{
 
             //
             httpOpenWeatherRequest =
-                "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "," + countryCode + "&appid=" + apiKey
+                "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "," + this.parameters?.getCountryCode() + "&appid=" + this.parameters?.getAPIKey()
 
         } else {
 
             //
             httpOpenWeatherRequest =
-                "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "," + countryCode + "&appid=" + apiKey
+                "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "," + this.parameters?.getCountryCode() + "&appid=" + this.parameters?.getAPIKey()
 
         }
 
