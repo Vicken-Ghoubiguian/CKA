@@ -4,10 +4,7 @@ package openWeather
 interface Parameters {
 
     //
-    var parametersType: String
-
-    //
-    //public fun getParametersType(): String
+    var parametersType: ParametersEnum
 
     //
     public override fun toString(): String
