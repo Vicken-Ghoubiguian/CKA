@@ -30,6 +30,8 @@ class PresentOpenWeather{
     //
     constructor(localization: String, apiKey: String) {
 
+        //
+        this.parameters = ParametersWithLocalizationAndApiKey(localization, apiKey)
     }
 
     //
