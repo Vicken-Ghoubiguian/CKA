@@ -16,14 +16,20 @@ class ParametersWithLocalizationAndApiKey : Parameters {
     }
 
     //
-    public fun getLocalization(): String? {
+    public override fun getLocalization(): String? {
 
         //
         return this.localization
     }
 
     //
-    public fun getApiKey(): String? {
+    public override fun getCountryCode(): String? {
+
+        TODO("Not yet implemented")
+    }
+
+    //
+    public override fun getAPIKey(): String? {
 
         //
         return this.apiKey

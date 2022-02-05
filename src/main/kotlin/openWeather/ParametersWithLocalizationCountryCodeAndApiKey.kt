@@ -20,21 +20,21 @@ class ParametersWithLocalizationCountryCodeAndApiKey : Parameters {
     }
 
     //
-    public fun getLocalization(): String? {
+    public override fun getLocalization(): String? {
 
         //
         return this.localization
     }
 
     //
-    public fun getCountryCode(): String? {
+    public override fun getCountryCode(): String? {
 
         //
         return this.countryCode
     }
 
     //
-    public fun getApiKey(): String? {
+    public override fun getAPIKey(): String? {
 
         //
         return this.apiKey

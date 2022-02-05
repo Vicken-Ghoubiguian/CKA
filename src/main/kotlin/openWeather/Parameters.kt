@@ -4,7 +4,12 @@ package openWeather
 interface Parameters {
 
     //
-    var parametersType: ParametersEnum
+    public var parametersType: ParametersEnum
+
+    //
+    public fun getLocalization(): String?
+    public fun getCountryCode(): String?
+    public fun getAPIKey(): String?
 
     //
     public override fun toString(): String

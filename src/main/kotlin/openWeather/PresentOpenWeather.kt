@@ -46,7 +46,22 @@ class PresentOpenWeather{
         val openWeatherClient = HttpClient(CIO)
 
         //
-        val httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "," + countryCode + "&appid=" + apiKey
+        var httpOpenWeatherRequest = ""
+
+        //
+        if(this.parameters?.parametersType == ParametersEnum.PARAMETERSWITHLOCALIZATIONAPIKEY) {
+
+            //
+            httpOpenWeatherRequest =
+                "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "," + countryCode + "&appid=" + apiKey
+
+        } else {
+
+            //
+            httpOpenWeatherRequest =
+                "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "," + countryCode + "&appid=" + apiKey
+
+        }
 
         //
         val openWeatheResponse: HttpResponse = openWeatherClient.get(httpOpenWeatherRequest)
