@@ -4,6 +4,9 @@ package openWeather
 class ParametersWithLocalizationAndApiKey : Parameters {
 
     //
+    override var parametersType: ParametersEnum = ParametersEnum.PARAMETERSWITHLOCALIZATIONAPIKEY
+
+    //
     private var localization: String? = null
     private var apiKey: String? = null
 
@@ -48,9 +51,6 @@ class ParametersWithLocalizationAndApiKey : Parameters {
         //
         TODO("Not yet implemented")
     }
-
-    //
-    override var parametersType: ParametersEnum = ParametersEnum.PARAMETERSWITHLOCALIZATIONAPIKEY
 
     //
     public override fun toString(): String {
