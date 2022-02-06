@@ -19,7 +19,7 @@ class PresentOpenWeather{
     private var feelingLikeTemperature: Temperature? = null
     private var minTemperature: Temperature? = null
     private var maxTemperature: Temperature? = null
-
+    private var pressure: Pressure? = null
     private var humidity: Humidity? = null
     private var wind: Wind? = null
     private var sunRiseTime: Time? = null
