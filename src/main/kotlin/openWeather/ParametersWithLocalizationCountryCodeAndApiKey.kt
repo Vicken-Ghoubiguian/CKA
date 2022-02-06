@@ -41,6 +41,20 @@ class ParametersWithLocalizationCountryCodeAndApiKey : Parameters {
     }
 
     //
+    override fun getLatitude(): Double? {
+
+        //
+        TODO("Not yet implemented")
+    }
+
+    //
+    override fun getLongitude(): Double? {
+
+        //
+        TODO("Not yet implemented")
+    }
+
+    //
     public override fun toString(): String {
 
         //

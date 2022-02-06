@@ -36,6 +36,20 @@ class ParametersWithLocalizationAndApiKey : Parameters {
     }
 
     //
+    override fun getLatitude(): Double? {
+
+        //
+        TODO("Not yet implemented")
+    }
+
+    //
+    override fun getLongitude(): Double? {
+
+        //
+        TODO("Not yet implemented")
+    }
+
+    //
     override var parametersType: ParametersEnum = ParametersEnum.PARAMETERSWITHLOCALIZATIONAPIKEY
 
     //
