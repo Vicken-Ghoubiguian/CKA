@@ -24,9 +24,6 @@ class PresentOpenWeather{
     private var uv: UV? = null
 
     //
-    /**/
-
-    //
     constructor(localization: String, countryCode: String, apiKey: String) {
 
         //
