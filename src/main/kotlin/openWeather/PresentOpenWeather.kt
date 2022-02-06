@@ -110,6 +110,12 @@ class PresentOpenWeather{
     }
 
     //
+    public fun getWeather(): Weather? {
+
+        return this.weather
+    }
+
+    //
     public fun getHumidity(): Humidity? {
 
         return this.humidity
@@ -119,6 +125,12 @@ class PresentOpenWeather{
     public fun getWind(): Wind? {
 
         return this.wind
+    }
+
+    //
+    public fun getGeoLocation(): GeographicLocation? {
+
+        return this.geoLocation
     }
 
     //
