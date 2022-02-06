@@ -21,6 +21,7 @@ class PresentOpenWeather{
     private var sunRiseTime: Time? = null
     private var sunSetTime: Time? = null
     private var geoLocation: GeographicLocation? = null
+    private var uv: UV? = null
 
     //
     /**/
@@ -143,6 +144,12 @@ class PresentOpenWeather{
     public fun getGeoLocation(): GeographicLocation? {
 
         return this.geoLocation
+    }
+
+    //
+    public fun getUv(): UV? {
+
+        return this.uv
     }
 
     //
