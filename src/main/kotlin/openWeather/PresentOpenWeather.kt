@@ -14,8 +14,13 @@ class PresentOpenWeather{
 
     //
     private var coords: Coordinates? = null
+    private var weather: Weather? = null
+
     private var humidity: Humidity? = null
     private var wind: Wind? = null
+    private var sunRiseTime: Time? = null
+    private var sunSetTime: Time? = null
+    private var geoLocation: GeographicLocation? = null
 
     //
     /**/
