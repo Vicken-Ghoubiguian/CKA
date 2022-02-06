@@ -128,6 +128,18 @@ class PresentOpenWeather{
     }
 
     //
+    public fun getSunRiseTime(): Time? {
+
+        return this.sunRiseTime
+    }
+
+    //
+    public fun getSunSetTime(): Time? {
+
+        return this.sunSetTime
+    }
+
+    //
     public fun getGeoLocation(): GeographicLocation? {
 
         return this.geoLocation
