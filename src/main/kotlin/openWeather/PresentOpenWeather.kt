@@ -118,6 +118,30 @@ class PresentOpenWeather{
     }
 
     //
+    public fun getTemperature(): Temperature? {
+
+        return this.temperature
+    }
+
+    //
+    public fun getFeelingLikeTemperature(): Temperature? {
+
+        return this.feelingLikeTemperature
+    }
+
+    //
+    public fun getMinTemperature(): Temperature? {
+
+        return this.minTemperature
+    }
+
+    //
+    public fun getMaxTemperature(): Temperature? {
+
+        return this.maxTemperature
+    }
+
+    //
     public fun getHumidity(): Humidity? {
 
         return this.humidity
