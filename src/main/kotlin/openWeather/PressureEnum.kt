@@ -1,0 +1,5 @@
+package openWeather
+
+//
+class PressureEnum {
+}
