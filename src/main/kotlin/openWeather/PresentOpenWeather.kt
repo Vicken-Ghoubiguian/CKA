@@ -87,25 +87,6 @@ class PresentOpenWeather{
     }
 
     //
-    /*public suspend fun openWeatherInitializer(localization: String, apiKey: String) {
-
-        //
-        val openWeatherClient = HttpClient(CIO)
-
-        //
-        val httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?q=" + localization + "&appid=" + apiKey
-
-        //
-        val openWeatheResponse: HttpResponse = openWeatherClient.get(httpOpenWeatherRequest)
-
-        //
-        println(openWeatheResponse.status)
-
-        //
-        openWeatherClient.close()
-    }*/
-
-    //
     public fun getCoords(): Coordinates? {
 
         return this.coords
