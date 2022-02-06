@@ -12,6 +12,15 @@ class ParametersWithLatitudeLongitudeAndApiKey : Parameters {
     private var apiKey: String? = null
 
     //
+    constructor(latitude: Double, longitude: Double,  apiKey: String) {
+
+        //
+        this.latitude = latitude
+        this.longitude = longitude
+        this.apiKey = apiKey
+    }
+
+    //
     override fun getLatitude(): Double? {
 
         //
