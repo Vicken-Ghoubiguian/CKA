@@ -1,1 +1,3 @@
 # CKA
+
+Console application to do very interesting things and... to learn Kotlin... and to teach this language...
