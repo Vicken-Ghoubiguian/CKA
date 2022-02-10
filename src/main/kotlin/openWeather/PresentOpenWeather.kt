@@ -89,9 +89,6 @@ class PresentOpenWeather{
             getResult = openWeatherClient.get<String>(httpOpenWeatherRequest)
 
             //
-            println(getResult)
-
-            //
             println(openWeatheResponse.status)
 
         }
