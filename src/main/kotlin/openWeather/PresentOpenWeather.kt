@@ -29,6 +29,9 @@ class PresentOpenWeather{
     private var uv: UV? = null
 
     //
+    private var httpGetResult: String? = null
+
+    //
     constructor(localization: String, countryCode: String, apiKey: String) {
 
         //
@@ -77,8 +80,7 @@ class PresentOpenWeather{
             httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?lat=" + this.parameters?.getLatitude().toString() + "&lon=" + this.parameters?.getLongitude().toString() + "&appid=" + this.parameters?.getAPIKey()
         }
 
-        //
-        val getResult: String
+        var transitionVar: String = ""
 
         runBlocking {
 
@@ -86,15 +88,13 @@ class PresentOpenWeather{
             val openWeatheResponse: HttpResponse = openWeatherClient.get<HttpResponse>(httpOpenWeatherRequest)
 
             //
-            getResult = openWeatherClient.get<String>(httpOpenWeatherRequest)
+            transitionVar = openWeatherClient.get<String>(httpOpenWeatherRequest)
 
             //
             println(openWeatheResponse.status)
-
         }
 
-        //
-        println(getResult)
+        this.httpGetResult = transitionVar
 
         //
         openWeatherClient.close()
@@ -175,6 +175,6 @@ class PresentOpenWeather{
     //
     public override fun toString(): String {
 
-        return "Hello World!"
+        return "" + this.httpGetResult + ""
     }
 }
