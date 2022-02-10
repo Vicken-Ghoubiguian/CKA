@@ -101,9 +101,6 @@ class PresentOpenWeather{
 
         //
         openWeatherClient.close()
-
-        //
-        //println(openWeatheResponse.toString())
     }
 
     //
