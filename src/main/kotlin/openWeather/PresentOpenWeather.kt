@@ -5,6 +5,7 @@ import io.ktor.client.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
+import kotlinx.coroutines.runBlocking
 
 //
 class PresentOpenWeather{
@@ -76,17 +77,27 @@ class PresentOpenWeather{
             httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?lat=" + this.parameters?.getLatitude().toString() + "&lon=" + this.parameters?.getLongitude().toString() + "&appid=" + this.parameters?.getAPIKey()
         }
 
-        //
-        val openWeatheResponse: HttpResponse = openWeatherClient.get(httpOpenWeatherRequest)
+        runBlocking {
 
-        //
-        println(openWeatheResponse.status)
+            //
+            val openWeatheResponse: HttpResponse = openWeatherClient.get<HttpResponse>(httpOpenWeatherRequest)
+
+            //
+            val getResult = openWeatherClient.get<String>(httpOpenWeatherRequest)
+
+            //
+            println(getResult)
+
+            //
+            println(openWeatheResponse.status)
+
+        }
 
         //
         openWeatherClient.close()
 
         //
-        println(openWeatheResponse.toString())
+        //println(openWeatheResponse.toString())
     }
 
     //
