@@ -80,7 +80,7 @@ class PresentOpenWeather{
             httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?lat=" + this.parameters?.getLatitude().toString() + "&lon=" + this.parameters?.getLongitude().toString() + "&appid=" + this.parameters?.getAPIKey()
         }
 
-        var transitionVar: String = ""
+        var getHTTPResultTransitionVar: String = ""
 
         runBlocking {
 
@@ -88,13 +88,13 @@ class PresentOpenWeather{
             val openWeatheResponse: HttpResponse = openWeatherClient.get<HttpResponse>(httpOpenWeatherRequest)
 
             //
-            transitionVar = openWeatherClient.get<String>(httpOpenWeatherRequest)
+            getHTTPResultTransitionVar = openWeatherClient.get<String>(httpOpenWeatherRequest)
 
             //
             println(openWeatheResponse.status)
         }
 
-        this.httpGetResult = transitionVar
+        this.httpGetResult = getHTTPResultTransitionVar
 
         //
         openWeatherClient.close()
