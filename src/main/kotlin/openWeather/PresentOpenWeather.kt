@@ -77,13 +77,16 @@ class PresentOpenWeather{
             httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?lat=" + this.parameters?.getLatitude().toString() + "&lon=" + this.parameters?.getLongitude().toString() + "&appid=" + this.parameters?.getAPIKey()
         }
 
+        //
+        val getResult: String
+
         runBlocking {
 
             //
             val openWeatheResponse: HttpResponse = openWeatherClient.get<HttpResponse>(httpOpenWeatherRequest)
 
             //
-            val getResult = openWeatherClient.get<String>(httpOpenWeatherRequest)
+            getResult = openWeatherClient.get<String>(httpOpenWeatherRequest)
 
             //
             println(getResult)
@@ -92,6 +95,9 @@ class PresentOpenWeather{
             println(openWeatheResponse.status)
 
         }
+
+        //
+        println(getResult)
 
         //
         openWeatherClient.close()
