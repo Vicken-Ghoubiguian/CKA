@@ -48,6 +48,8 @@ class PresentOpenWeather{
     //
     constructor(longitude: Double, latitude: Double, apiKey: String) {
 
+        //
+        this.parameters = ParametersWithLatitudeLongitudeAndApiKey(latitude, longitude, apiKey)
     }
 
     //
