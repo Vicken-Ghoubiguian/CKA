@@ -1,6 +1,6 @@
 # CKA
 
-Console application to do very interesting things and... to learn Kotlin... and to teach this language...
+Console application to do very interesting things (weather, emojis...) and... to learn Kotlin... and to teach this language...
 
 <a name="introduction"></a>
 ## Introduction
