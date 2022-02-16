@@ -2,6 +2,9 @@
 
 Console application to do very interesting things (weather, emojis...) and... to learn Kotlin... and to teach this language...
 
+<a name="contents"></a>
+## Contents
+
 <a name="introduction"></a>
 ## Introduction
 
