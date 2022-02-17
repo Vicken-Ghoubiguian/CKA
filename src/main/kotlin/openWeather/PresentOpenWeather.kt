@@ -55,9 +55,6 @@ class PresentOpenWeather{
     //
     public suspend fun openWeatherInitializer() {
 
-        //
-        //try {
-
             //
             val openWeatherClient = HttpClient(CIO)
 
@@ -90,8 +87,10 @@ class PresentOpenWeather{
 
             var getHTTPResultTransitionVar: String = ""
 
+            //
             try {
 
+                //
                 runBlocking {
 
                     //
@@ -118,15 +117,6 @@ class PresentOpenWeather{
                 //
                 openWeatherClient.close()
             }
-
-            //
-            //openWeatherClient.close()
-
-        //} catch(exp : Exception) {
-
-            //
-            //println(exp.toString())
-        //}
     }
 
     //
