@@ -56,50 +56,62 @@ class PresentOpenWeather{
     public suspend fun openWeatherInitializer() {
 
         //
-        val openWeatherClient = HttpClient(CIO)
-
-        //
-        var httpOpenWeatherRequest = ""
-
-        //
-        if(this.parameters?.parametersType == ParametersEnum.PARAMETERSWITHLOCALIZATIONAPIKEY) {
+        try {
 
             //
-            httpOpenWeatherRequest =
-                "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "&appid=" + this.parameters?.getAPIKey()
+            val openWeatherClient = HttpClient(CIO)
 
             //
-        } else if(this.parameters?.parametersType == ParametersEnum.PARAMETERSWITHLOCALIZATIONCOUNTRYCODEAPIKEY) {
+            var httpOpenWeatherRequest = ""
 
             //
-            httpOpenWeatherRequest =
-                "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "," + this.parameters?.getCountryCode() + "&appid=" + this.parameters?.getAPIKey()
+            if (this.parameters?.parametersType == ParametersEnum.PARAMETERSWITHLOCALIZATIONAPIKEY) {
+
+                //
+                httpOpenWeatherRequest =
+                    "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "&appid=" + this.parameters?.getAPIKey()
+
+                //
+            } else if (this.parameters?.parametersType == ParametersEnum.PARAMETERSWITHLOCALIZATIONCOUNTRYCODEAPIKEY) {
+
+                //
+                httpOpenWeatherRequest =
+                    "https://api.openweathermap.org/data/2.5/weather?q=" + this.parameters?.getLocalization() + "," + this.parameters?.getCountryCode() + "&appid=" + this.parameters?.getAPIKey()
+
+                //
+            } else {
+
+                //
+                httpOpenWeatherRequest =
+                    "https://api.openweathermap.org/data/2.5/weather?lat=" + this.parameters?.getLatitude()
+                        .toString() + "&lon=" + this.parameters?.getLongitude()
+                        .toString() + "&appid=" + this.parameters?.getAPIKey()
+            }
+
+            var getHTTPResultTransitionVar: String = ""
+
+            runBlocking {
+
+                //
+                val openWeatheResponse: HttpResponse = openWeatherClient.get<HttpResponse>(httpOpenWeatherRequest)
+
+                //
+                getHTTPResultTransitionVar = openWeatherClient.get<String>(httpOpenWeatherRequest)
+
+                //
+                println(openWeatheResponse.status)
+            }
+
+            this.httpGetResult = getHTTPResultTransitionVar
 
             //
-        } else {
+            openWeatherClient.close()
+
+        } catch(exp : Exception) {
 
             //
-            httpOpenWeatherRequest = "https://api.openweathermap.org/data/2.5/weather?lat=" + this.parameters?.getLatitude().toString() + "&lon=" + this.parameters?.getLongitude().toString() + "&appid=" + this.parameters?.getAPIKey()
+            println(exp.toString())
         }
-
-        var getHTTPResultTransitionVar: String = ""
-
-        runBlocking {
-
-            //
-            val openWeatheResponse: HttpResponse = openWeatherClient.get<HttpResponse>(httpOpenWeatherRequest)
-
-            //
-            getHTTPResultTransitionVar = openWeatherClient.get<String>(httpOpenWeatherRequest)
-
-            //
-            println(openWeatheResponse.status)
-        }
-
-        this.httpGetResult = getHTTPResultTransitionVar
-
-        //
-        openWeatherClient.close()
     }
 
     //
