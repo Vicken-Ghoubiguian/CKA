@@ -85,6 +85,7 @@ class PresentOpenWeather{
                         .toString() + "&appid=" + this.parameters?.getAPIKey()
             }
 
+            //
             var getHTTPResultTransitionVar: String = ""
 
             //
