@@ -8,6 +8,7 @@ Console application to do very interesting things (weather, emojis...) and... to
 * [Introduction](#introduction)
 * [Definition](#definition)
 * [Features](#features)
+* [Structure](#structure)
 * [Development](#development)
 * [Deployment](#deployment)
 * [Useful links](#useful_links)
@@ -21,6 +22,9 @@ Console application to do very interesting things (weather, emojis...) and... to
 
 <a name="features"></a>
 ## Features
+
+<a name="structure"></a>
+## Structure
 
 <a name="development"></a>
 ## Development
