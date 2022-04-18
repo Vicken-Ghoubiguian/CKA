@@ -12,6 +12,7 @@ Console application to do very interesting things (weather, emojis...) and... to
 * [Development](#development)
 * [Deployment](#deployment)
 * [Useful links](#useful_links)
+  * [Ktor](#ktor)
 * [Conclusion](#conclusion)
 
 <a name="introduction"></a>
