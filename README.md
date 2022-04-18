@@ -5,6 +5,14 @@ Console application to do very interesting things (weather, emojis...) and... to
 <a name="contents"></a>
 ## Contents
 
+* [Introduction](#introduction)
+* [Definition](#definition)
+* [Features](#features)
+* [Development](#development)
+* [Deployment](#deployment)
+* [Useful links](#useful_links)
+* [Conclusion](#conclusion)
+
 <a name="introduction"></a>
 ## Introduction
 
