@@ -11,14 +11,14 @@ Console application to do very interesting things (weather, emojis...) and... to
 <a name="definition"></a>
 ## Definition
 
+<a name="features"></a>
+## Features
+
 <a name="development"></a>
 ## Development
 
 <a name="Deployment"></a>
 ## Deployment
-
-<a name="features"></a>
-## Features
 
 <a name="useful_links"></a>
 ## Useful links
