@@ -1,6 +1,6 @@
 # CKA
 
-Console application to do very interesting things (weather, emojis...) and... to learn Kotlin... and to teach this language... This is only a first step to develop in this programming language...
+Console application to do very interesting things (weather, emojis...) and... to learn Kotlin... and to teach this language... This is only a first step to develop in this programming language... Other steps will follow...
 
 <a name="contents"></a>
 ## Contents
