@@ -31,8 +31,12 @@ Console application to do very interesting things (weather, emojis...) and... to
 <a name="structure"></a>
 ## Structure
 
+
+
 <a name="development"></a>
 ## Development
+
+
 
 <a name="Deployment"></a>
 ## Deployment
