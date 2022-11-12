@@ -26,6 +26,8 @@ Console application to do very interesting things (weather, emojis...) and... to
 <a name="features"></a>
 ## Features
 
+
+
 <a name="structure"></a>
 ## Structure
 
